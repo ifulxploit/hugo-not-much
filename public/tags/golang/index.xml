@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on not-much demo</title>
+    <link>https://example.org/tags/golang/</link>
+    <description>Recent content in golang on not-much demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Sample custom notice © {year}</copyright>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1</title>
+      <link>https://example.org/projects/project-1/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/project-1/</guid>
+      <description>Ini adalah detail dari proyek pertama saya&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>

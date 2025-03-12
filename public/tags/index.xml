@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on not-much demo</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on not-much demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Sample custom notice © {year}</copyright>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang</title>
+      <link>https://example.org/tags/golang/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>hugo</title>
+      <link>https://example.org/tags/hugo/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nextjs</title>
+      <link>https://example.org/tags/nextjs/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/nextjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>react</title>
+      <link>https://example.org/tags/react/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>css</title>
+      <link>https://example.org/tags/css/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>html</title>
+      <link>https://example.org/tags/html/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>markdown</title>
+      <link>https://example.org/tags/markdown/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>themes</title>
+      <link>https://example.org/tags/themes/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/themes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>web</title>
+      <link>https://example.org/tags/web/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/web/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
