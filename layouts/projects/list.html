@@ -1,0 +1,55 @@
+{{ define "main" }}
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+    <h1>Projects</h1>
+    {{ .Content }}
+
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "projects") }}
+    {{ range $paginator.Pages }}
+    <div class="row mb-4 align-items-center">  <!-- Menyusun gambar dan teks sejajar -->
+      <div class="col-md-4">
+        {{ $img := .Params.image | default "/images/default-placeholder.webp" }}
+        <img src="{{ $img | relURL }}" alt="Preview of {{ .Title }}" class="img-fluid rounded shadow-sm lazyload" loading="lazy">
+      </div>
+      <div class="col-md-8">
+        <h2 class="h4 mb-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2> <!-- Judul ada di samping gambar -->
+        
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_long" }}
+        <time class="small text-muted d-block mb-2" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+        <p class="small opacity-75 post-summary mb-2">{{ .Summary }}</p> <!-- Memberi jarak sebelum tags -->
+
+        <!-- Menampilkan tag proyek dengan jarak -->
+        {{ with .Params.tags }}
+        <p class="small">
+          <strong>Tags:</strong>
+          {{ range . }}
+            <span class="badge bg-success me-1">{{ . }}</span> <!-- Menggunakan badge dengan margin kanan -->
+          {{ end }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav aria-label="pagination">
+      <ul class="pagination justify-content-center">
+        {{ if $paginator.HasPrev }}
+        <li class="page-item">
+          <a class="page-link" href="{{ $paginator.Prev.URL }}">← Back</a>
+        </li>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+        <li class="page-item">
+          <a class="page-link" href="{{ $paginator.Next.URL }}">Next →</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  </div>
+{{ end }}

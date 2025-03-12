@@ -1,7 +1,8 @@
 # The following line is needed
 # when running the example site
 # from a subdir of the theme
-themesDir = "../../"
+themesDir = "themes"
+
 
 title = "not-much demo"
 theme = "not-much"
@@ -15,6 +16,7 @@ copyright = "Sample custom notice © {year}"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
 
 
 [params]
@@ -52,3 +54,10 @@ showPostsSummary = true
     title = "GitHub"
     url = "https://github.com/imgios/not-much"
     weight = 4
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    title = "Projects"
+    url = "/projects/"
+    weight = 5

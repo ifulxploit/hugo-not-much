@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="container mt-5">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.image }}
+      <img src="{{ . }}" class="img-fluid mb-4" alt="{{ $.Title }}">
+    {{ end }}
+    <p>{{ .Content }}</p>
+    <a href="/projects" class="btn btn-secondary mt-3">Kembali ke Daftar Proyek</a>
+  </div>
+{{ end }}
